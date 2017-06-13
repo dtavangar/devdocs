@@ -48,4 +48,4 @@ To go live:
 	We support `www.domain.tld CNAME <environment>-<project>.<region>.magentosite.cloud` 
 
 	We don't support `domain.tld CNAME <environment>-<project>.<region>.magentosite.cloud`
-4.	Purchase an SSL certificate and provide it to Support when requested.
+4.	Make sure that the Fastly SSL certificate is setup for your final live domain(s)
