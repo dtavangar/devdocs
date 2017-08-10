@@ -108,13 +108,19 @@ These example instructions detail how to install and create a MariaDB database f
 
         mysql_secure_installation
 3. Access the MariaDB database.
-4. Grant all priviledges to the Magento account you created for the local:
 
-        grant all priviledges on <database> to '<account>'@'localhost' identified by '<password>';
-5. Finally create the database:
+4. Create DB user
+
+	CREATE USER '<USERNAME>'@'localhost' IDENTIFIED BY '<PASSWORD>';
+
+5. Create the database:
 
         create database magento;
         use magento;
+6. Grant all priviledges to the Magento account you created for the local:
+
+        GRANT ALL PRIVILEGES ON <database> to '<USERNAME>'@'localhost' identified by '<password>';
+
 6. Exit when done.
 
 ### Set up the auto-increment for MariaDB {#cloud-mysql}
