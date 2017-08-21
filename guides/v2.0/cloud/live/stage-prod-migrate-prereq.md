@@ -19,6 +19,7 @@ When you are ready to deploy your store, you need to complete deployment and tes
 Make sure to complete all development and merging of your code to the `master` branch in the Integration environment. Only the `master` branch is deployed to Staging then Production.
 </div>
 
+CAN WE RE-VISIT THIS SECTION? DEPLOYMENT HOOKS ARE CREATED DURING PROVISIONING, NO SUPPORT TICKET IS NEEDED. PLEASE REACH OUT TO PLATFORM FOR MORE DETAILS.
 For **first time setup** to migrate your database and deploy code to Staging or Production, you will:
 
 1.	Create a support ticket to [migrate deployment hooks](#cloud-live-migrate-yaml). If you haven't already, also include your public SSH keys to add to Staging and Production.
@@ -34,7 +35,9 @@ For **continuous integration** after first time setup, you will:
 
 If you haven't done so already, upload any [Fastly VCL snippets]({{ page.baseurl }}cloud/access-acct/fastly.html#cloud-live-migrate-fastly-snip) in your Integration environment `master` Magento Admin panel. Fastly is available in Staging and Production.
 
-## Migrate deployment hooks in your `.magento.app.yaml` file {#cloud-live-migrate-yaml}
+## Migrate deployment hooks in your `.magento.app.yaml` file {#cloud-live-migrate-yaml} 
+
+THIS SECTION IS OUTDATED, CAN WE RE VISIT AND ENSURE TO ADD 
 
 {% include cloud/hooks.md %}
 
