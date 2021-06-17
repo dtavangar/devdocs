@@ -213,7 +213,8 @@ To update your DNS configuration for development:
    -  Use the Magento CLI to change the base URL for your store.
 
       ```bash
-      php bin/magento setup:store-config:set --base-url="https://mcstaging.your-domain.com/"
+      php bin/magento setup:store-config:set --base-url="http://mcstaging.your-domain.com/"
+      php bin/magento setup:store-config:set --base-url-secure="https://mcstaging.your-domain.com/"
       ```
 
    {:.bs-callout-info}
